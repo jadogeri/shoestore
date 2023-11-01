@@ -1,0 +1,10 @@
+ .red_text{
+
+color: red;
+font-size: 100px;
+
+}
+
+.red_text :hover {
+    color: green;;
+}
