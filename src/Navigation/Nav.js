@@ -1,13 +1,26 @@
 import React from 'react'
-import styles from './NavStyles'
 import './Nav.css'
+import {FiHeart} from 'react-icons/fi'
+import {AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 
 const Nav = () => {
-  return (
-    <div className='red_text'>
-      Nav
-    </div>
-  )
-}
+  return <nav >
+    <div className='nav-container'>
+      <input 
+      type='text'
+      className='search-input'
+      placeholder='Enter your search shoes'
+      />
 
+    </div >
+    <div className='profile-container'>
+    <a href='#'>
+      <FiHeart className='nav-icons'/>
+    </a>
+
+    <a href='#'></a>
+    <AiOutlineUserAdd className='nav-icons'/>
+    </div>
+  </nav>
+}
 export default Nav;
