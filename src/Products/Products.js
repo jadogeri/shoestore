@@ -1,38 +1,11 @@
-import { AiFillStar } from 'react-icons/ai'
-import {BsFillBagHeartFill} from 'react-icons/bs'
-import './Products.css'
-import React from 'react'
+import "./Product.css";
 
-export default function Products() {
+const Products = ({ result }) => {
   return (
-    <section className='card-container'>
-        <section className='card'>
-<img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-    alt='shoe'
-/>
-<div className='card-details'>
-    <h3 className='card-title'>Shoe</h3>
-    <section className='card-reviews'>
-        <AiFillStar/>
-        <AiFillStar/> 
-        <AiFillStar/> 
-        <AiFillStar/> 
-        <AiFillStar/>
-        <span className='total-reviews'>4</span>
-    </section>
-    <section className='card-price'>
-        <div className='price'>
-<del>$300</del> $200
-</div>
+    <>
+      <section className="card-container">{result}</section>
+    </>
+  );
+};
 
-<div className='bag'>
-    <BsFillBagHeartFill className='bag-icon'/>
-</div>
-    </section>
-        </div>
-
-        </section>
-
-    </section>
-  )
-}
+export default Products;
